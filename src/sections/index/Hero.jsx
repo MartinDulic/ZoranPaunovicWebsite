@@ -4,6 +4,12 @@ import heroImage  from '../../assets/images/Zelena_sam.jpg'
 
 const HeroSection = () => {
   
+  // Preload the image when component mounts
+  useEffect(() => {
+    const img = new Image();
+    img.src = heroImage;
+  }, []); // ← Empty dependency array = runs once on mount
+
   const [nameRef, nameInView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -20,6 +26,7 @@ const HeroSection = () => {
         src={heroImage}
         alt="Hero Image" 
         className="absolute inset-0 h-full w-full object-cover object-[64%] sm:object-[46%] md:object-[32%] lg:object-left"
+        loading="eager" 
       />
       <div className='absolute inset-0 bg-black bg-opacity-20'></div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-zinc-900"></div>
