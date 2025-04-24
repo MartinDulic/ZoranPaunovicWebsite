@@ -54,31 +54,32 @@ const Nav = () => {
     }
   };
 
-  const linkItemsNavbar = links.map((link, index) => {
-    return (
-      <a 
-        key={index} 
-        href={link.to} 
-        onClick={(e) => handleSmoothScroll(e, link.to)} // **NEW: Add onClick handler**
-        className={`text-lg font-frutiger font-bold cursor-pointer hover:text-primary hover:text-shadow-none transition-opacity ${isScrolled ? 'text-secondary' : 'text-white text-shadow-sm'}`}
-      >
-        {link.text}
-      </a>
-    );
-  });
+// In your Nav component, update the link generation:
+const linkItemsNavbar = links.map((link, index) => {
+  return (
+    <a 
+      key={index} 
+      href={`#${link.to.substring(1)}`}  // Add hash prefix
+      onClick={(e) => handleSmoothScroll(e, link.to)}
+      className={`text-lg font-frutiger font-bold cursor-pointer hover:text-primary hover:text-shadow-none transition-opacity ${isScrolled ? 'text-secondary' : 'text-white text-shadow-sm'}`}
+    >
+      {link.text}
+    </a>
+  );
+});
 
-  const linkItemsSidebar = links.map((link, index) => {
-    return (
-      <a 
-        key={index} 
-        href={link.to} 
-        onClick={(e) => handleSmoothScroll(e, link.to)} // **NEW: Add onClick handler**
-        className='text-lg font-frutiger font-bold border-b-2 w-full pb-2 hover:text-primary'
-      >
-        {link.text}
-      </a>
-    );
-  });
+const linkItemsSidebar = links.map((link, index) => {
+  return (
+    <a 
+      key={index} 
+      href={`#${link.to.substring(1)}`}  // Add hash prefix
+      onClick={(e) => handleSmoothScroll(e, link.to)}
+      className='text-lg font-frutiger font-bold border-b-2 w-full pb-2 hover:text-primary'
+    >
+      {link.text}
+    </a>
+  );
+});
 
   const socialIcons =
   <>
