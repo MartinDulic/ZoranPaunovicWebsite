@@ -33,7 +33,7 @@ const SectionWithImage = ({
         {`
           lg:flex-1 w-full lg:h-auto lg:mb-0 overflow-hidden
          ${maxHeight ? "  xl:max-h-[90vh]" :" "} 
-        `}
+        `} 
       >
 
         <img 
