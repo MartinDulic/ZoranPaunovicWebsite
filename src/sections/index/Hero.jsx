@@ -27,6 +27,8 @@ const HeroSection = () => {
         alt="Hero Image" 
         className="absolute inset-0 h-full w-full object-cover object-[64%] sm:object-[46%] md:object-[32%] lg:object-left"
         loading="eager" 
+        fetchpriority="high" // Chrome 101+
+        decoding="async"
       />
       <div className='absolute inset-0 bg-black bg-opacity-20'></div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-zinc-900"></div>
