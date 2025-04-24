@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useInView } from 'react-intersection-observer';
 import heroImage  from '../../assets/images/Zelena_sam.jpg'
 
