@@ -25,7 +25,7 @@ const HeroSection = () => {
       <img 
         src={heroImage}
         alt="Hero Image" 
-        className="absolute inset-0 h-full w-full object-cover object-[64%] sm:object-[46%] md:object-[32%] lg:object-left"
+        className="absolute inset-0 h-full w-full object-cover object-[52%] sm:object-[50%] "
         loading="eager" 
         fetchpriority="high" // Chrome 101+
         decoding="async"

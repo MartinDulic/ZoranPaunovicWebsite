@@ -42,7 +42,7 @@ const Program = () => {
 
         <div
           ref={textRef} 
-          className={`text-xl lg:text-2xl italic text-textSecondary px-4 sm:px-8 md:px-12 lg:px-16 xl:px-56 lg:text-center transition-all duration-1000 ease-out transform 
+          className={`text-xl lg:text-2xl italic text-textSecondary px-4 sm:px-8 md:px-12 lg:px-16 xl:px-56 text-justify transition-all duration-1000 ease-out transform 
             ${textInView
               ? `opacity-100 translate-y-0 `
               : 'opacity-0 translate-y-10'
@@ -56,7 +56,7 @@ const Program = () => {
         </div>
       </div>
 
-      <div className='mt-8 xl:px-40'>
+      <div className='mt-8 xl:px-40 mb-12'>
         {programItems}
       </div>
     </section>

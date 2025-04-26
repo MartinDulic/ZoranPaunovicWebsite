@@ -43,7 +43,7 @@ const ProgramItem = ({project, index}) => {
       </h3>
       <p>{project.firstBold}</p>
       <div 
-        className={`duration-1000 ease-out transform delay-700
+        className={`text-justify duration-1000 ease-out transform delay-700 
           ${textInView
             ? `opacity-100 translate-y-0 `
             : 'opacity-0 -translate-y-10'

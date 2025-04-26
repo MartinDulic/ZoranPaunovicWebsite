@@ -5,8 +5,7 @@ import { IoMdClose } from "react-icons/io";
 import { links } from "../data/navLinks.js"
 import SdpLogoWhite from "../assets/images/SdpLogoWhite.webp"
 import SdpLogoRed from "../assets/images/SdpLogoRed.webp"
-import { FaTiktok, FaFacebookF, FaInstagram  } from "react-icons/fa";
-import SocialIcon from "./SocialIcon.jsx"
+import SocialIcons from "./SocialIcons.jsx"
 
 const Nav = () => {
   const [navRef, navInView] = useInView({
@@ -81,21 +80,7 @@ const linkItemsSidebar = links.map((link, index) => {
   );
 });
 
-  const socialIcons =
-  <>
-    <SocialIcon 
-      icon={<FaFacebookF className='text-2xl'/>} 
-      link={"https://www.facebook.com/share/12HueEdUB5c/"}
-    />
-    <SocialIcon 
-      icon={<FaInstagram className='text-2xl'/>} 
-      link={"https://www.instagram.com/zoran_paunovic_makarska?igsh=MXY4NWRrdnBhMDJ0Mw=="}
-    />
-    <SocialIcon 
-      icon={<FaTiktok className='text-2xl'/>} 
-      link={"https://www.tiktok.com/@zoranpaunovic182?_t=ZN-8vQATQsjpgd&_r=1"}
-    />
-  </>
+
 
   return (
     <>
@@ -117,7 +102,7 @@ const linkItemsSidebar = links.map((link, index) => {
         <div className='flex'>
           <img src={isScrolled ? SdpLogoRed : SdpLogoWhite} alt="Spd Logo" className='h-8 pl-4 mr-8' />
           <div className={`hidden md:flex items-center justify-center gap-4 ${isScrolled ? 'text-secondary' : 'text-white'}`}>
-            {socialIcons}
+            <SocialIcons/>
           </div>
         </div>
         <div className='hidden md:flex gap-4 mr-8'>
@@ -147,7 +132,7 @@ const linkItemsSidebar = links.map((link, index) => {
         />
         <div className='flex flex-col text-secondary items-start gap-6 mt-20 mx-8'>{linkItemsSidebar}</div>
         <div className='m-8 flex gap-4'>
-          {socialIcons}
+          <SocialIcons/>
         </div>
       </section>
     </>

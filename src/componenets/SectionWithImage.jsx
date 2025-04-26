@@ -11,10 +11,11 @@ const SectionWithImage = ({
   imagePositionVertical = 0,
   imagePositionHorizontal = 0,
   cropImageOnSmallDevices = false,
+  textCenter = false
 }) => {
 
   const textSections = text.map((part, index) => {
-    return <p key={index} className='pb-4'>{part}</p>
+    return <p key={index} className='pb-4 text-justify'>{part}</p>
   });
 
   const vertical = imagePositionVertical !== 0 ? `${imagePositionVertical}%` : 'center';
@@ -32,7 +33,7 @@ const SectionWithImage = ({
       <div className=
         {`
           lg:flex-1 w-full lg:h-auto lg:mb-0 overflow-hidden
-         ${maxHeight ? "  xl:max-h-[90vh]" :" "} 
+         ${maxHeight ? "  xl:max-h-[80vh]" :" "} 
         `} 
       >
 
@@ -49,10 +50,10 @@ const SectionWithImage = ({
       </div>
       
       {/* Text container (also stretches to match height) */}
-      <div className='flex-1 '>
+      <div className={`flex-1 ${textCenter ? " flex items-center " : ""}`}>
         <div className='lg:p-16 '>
           {title ? <Title text={title} className='mt-8 lg:mt-0'/> : <></>}
-          <div className='text-lg 2xl:text-xl text-textPrimary pl-4 pt-4'>
+          <div className='text-lg 2xl:text-xl text-textPrimary px-4 pt-4'>
             {textSections}
           </div>
         </div>
