@@ -100,7 +100,7 @@ const linkItemsSidebar = links.map((link, index) => {
       >
         
         <div className='flex'>
-          <img src={isScrolled ? SdpLogoRed : SdpLogoWhite} alt="Spd Logo" className='h-8 pl-4 mr-8' />
+          <img src={isScrolled ? SdpLogoRed : SdpLogoWhite} alt="Sdp Logo" className='h-8 pl-4 mr-8' />
           <div className={`hidden md:flex items-center justify-center gap-4 ${isScrolled ? 'text-secondary' : 'text-white'}`}>
             <SocialIcons/>
           </div>

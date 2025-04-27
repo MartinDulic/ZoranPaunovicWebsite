@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
 import { useInView } from 'react-intersection-observer';
-import heroImage  from '../../assets/images/Zelena_sam.jpg'
+import HeroImage  from '../../assets/images/Banner.jpg'
 
 const HeroSection = () => {
   
   // Preload the image when component mounts
   useEffect(() => {
     const img = new Image();
-    img.src = heroImage;
+    img.src = HeroImage;
   }, []); // ← Empty dependency array = runs once on mount
 
   const [nameRef, nameInView] = useInView({
@@ -23,9 +23,9 @@ const HeroSection = () => {
   return (
     <section className='h-screen w-full relative'>
       <img 
-        src={heroImage}
+        src={HeroImage}
         alt="Hero Image" 
-        className="absolute inset-0 h-full w-full object-cover object-[52%] sm:object-[50%] "
+        className="absolute inset-0 h-full w-full object-cover object-[76%] sm:object-[84%] md:object-[90%] "
         loading="eager" 
         fetchpriority="high" // Chrome 101+
         decoding="async"
