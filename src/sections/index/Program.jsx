@@ -49,10 +49,9 @@ const Program = () => {
             }
           `}
         >	
-          U protekle četiri godine postavili smo čvrste temelje za daljnji razvoj Makarske. 
-          U novom mandatu nastavljamo s uspješnim projektima, te krećemo u realizaciju novih kojima ćemo dodatno 
-          poboljšati svakodnevni život u gradu i učiniti Makarsku gradom za sve generacije. Nastavljamo zajedno za Makarsku
-          kojom se ponosimo!
+          U protekle četiri godine postavili smo čvrste temelje za daljnji razvoj Makarske. U novom mandatu nastavljamo
+           s uspješnim projektima, te krećemo u realizaciju novih kojima ćemo dodatno poboljšati svakodnevni život u 
+           gradu i učiniti Makarsku gradom za sve generacije. Nastavljamo zajedno za Makarsku kojom se ponosimo!
         </div>
       </div>
 
