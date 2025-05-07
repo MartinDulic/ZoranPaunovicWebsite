@@ -1,4 +1,5 @@
 import AntoniaRadicBrkan from "../assets/images/vijece/D00A3609.webp"
+import AntonijaNova from "../assets/images/vijece/AntonijaNova.webp"
 import GordanaMuhtic from "../assets/images/vijece/D00A3618.webp"
 import FraneFilipeti from "../assets/images/vijece/D00A3545.webp"
 import TinaMedurecan from "../assets/images/vijece/D00A3593.webp"
@@ -23,10 +24,10 @@ export const council = [
   },
   {
     name: "Antonia Radić Brkan",
-    title: "MBA, poduzetnica",
-    image: AntoniaRadicBrkan,
+    title: "poduzetnica, magistra turističke komunikologije i poslovnog upravljanja (Executive MBA), nestranačka kandidatkinja",
+    image: AntonijaNova,
     text: [
-      "Aktualna zamjenica gradonačelnika, rođena je 10. listopada 1977. u Splitu. Diplomirala je turističku komunikologiju na Sveučilištu u Zadru, a dodatno se usavršila kroz Executive MBA program u Zagrebu. Više od 18 godina bila je suvlasnica i direktorica agencije u području turizma, marketinga i razvoja destinacija, gdje je vodila projekte koji su osvajali nagrade i ostavljali stvaran trag.",
+      "Aktualna zamjenica gradonačelnika, rođena je 10. listopada 1977. u Splitu. Diplomirala je turističku komunikologiju na Sveučilištu u Zadru, a dodatno se usavršavala na poslijediplomskom studiju menadžmenta te stekla međunarodnu titulu Executive MBA. Više od 18 godina bila je suvlasnica i direktorica agencije u području turizma, marketinga i razvoja destinacija, gdje je vodila projekte koji su osvajali nagrade i ostavljali stvaran trag.",
       "Svoja prva profesionalna iskustva stjecala je kroz suradnju s Hrvatskom turističkom zajednicom, a kasnije i kao potpredsjednica Odbora za turizam Američke gospodarske komore. Dugi niz godina znanje je prenosila i studentima kao predavačica. ",
       "U gradskoj upravi svakodnevno radi na projektima koji povezuju lokalnu zajednicu, poduzetništvo i kulturu, osluškuje potrebe mladih i stvara prostor za njihovo aktivno sudjelovanje i razvoj.",
       "Projektima poput “Lokale u kale” vraća se život u staru gradsku jezgru, a mladi se uključuju kroz poduzetničke, kreativne i društvene inicijative.",

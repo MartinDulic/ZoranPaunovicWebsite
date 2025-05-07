@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '../../componenets/Title'
 import ZelenaTim from '../../assets/images/Zelena_tim.jpg'
+import Duo from '../../assets/images/Duo.webp'
 import ProgramItem from '../../componenets/ProgramItem'
 import { projects } from '../../data/programPoints'
 import { useInView } from 'react-intersection-observer';
@@ -27,7 +28,7 @@ const Program = () => {
       <div className='lg:flex items-center justify-center lg:mx-20 lg:mt-20 xl:mx-28 xl:mt-28 '>
         <div className='lg:w-[80vw] xl:w-[60vw] relative'>
           <img
-            src={ZelenaTim}
+            src={Duo}
             alt="Team"
             className='w-full h-full object-cover object-top lg:shadow-xl'
           />

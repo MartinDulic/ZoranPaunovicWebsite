@@ -34,28 +34,28 @@ const HeroSection = () => {
       <img 
         src={HeroImageMobile}
         alt="Hero Image" 
-        className="absolute inset-0 h-full w-full object-cover object-[62%]  xl:hidden"
+        className="absolute inset-0 h-full w-full object-cover object-[62%] "
         loading="eager" 
         fetchpriority="high"
         decoding="async"
       />
-      <img 
+      {/* <img 
         src={HeroImageDesktop} 
         alt="Hero Image" 
         className='absolute inset-0 h-full w-full object-fill hidden xl:block '  
         loading="eager" 
         fetchpriority="high"
         decoding="async"
-      />
+      /> */}
 
-      <div className='absolute inset-0 bg-black bg-opacity-20 xl:hidden'></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-zinc-900 xl:hidden"></div>
+      <div className='absolute inset-0 bg-black bg-opacity-20 '></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-zinc-900"></div>
 
-      <div className='font-frutigerBold absolute top-1/3 ml-8 xl:hidden'>
+      <div className='font-frutigerBold absolute top-1/3 ml-8 lg:left-12 xl:left-20 '>
         {/* Title */}
         <div 
           ref={titleRef}
-          className={`text-3xl sm:text-5xl font-bold text-white w-20 pb-8 transition-all duration-1000 ease-out ${
+          className={`text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white w-20 pb-8 transition-all duration-1000 ease-out ${
             titleInView
               ? 'opacity-100 '
               : 'opacity-0 '
@@ -73,11 +73,11 @@ const HeroSection = () => {
               : 'opacity-0 '
           }`} 
         >
-          <div className="bg-white border border-white text-primary p-2 pb-0 text-xl sm:text-2xl w-fit ">
+          <div className="bg-white border border-white text-primary p-2 pb-0 text-xl sm:text-2xl lg:text-4xl xl:text-5xl w-fit ">
             gradonačelnik
           </div>
           
-          <div className="bg-white text-primary border-white text-3xl sm:text-5xl p-2 w-fit">
+          <div className="bg-white text-primary border-white text-3xl sm:text-5xl lg:text-6xl xl:text-7xl p-2 w-fit">
             ZORAN PAUNOVIĆ
           </div>
         </div>
@@ -85,7 +85,7 @@ const HeroSection = () => {
         {/* Subtitle 2 */}
         <div 
           ref={subtitleRef}
-          className={`text-white text-xl sm:text-2xl mt-2 font-bold italic transition-all duration-1000 ease-out ${
+          className={`text-white text-xl sm:text-2xl lg:text-3xl xl:text-4xl mt-2 font-bold italic transition-all duration-1000 ease-out ${
             subtitleInView
               ? 'opacity-100 '
               : 'opacity-0 '
